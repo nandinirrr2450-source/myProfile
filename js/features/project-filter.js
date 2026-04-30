@@ -83,17 +83,17 @@ function renderproject(searchText = "") {
         card.className = "relative p-8 pb-16 text-center bg-white rounded-3xl shadow-lg cursor-pointer";
 
         const projectName = document.createElement("h2");
-        projectName.className = "text-xl font-bold mb-2";
+        projectName.className = "text-xl font-bold mb-2 text-black";
         projectName.innerHTML = highlight(project.name);
 
         const projectCategory = document.createElement("h5");
-        projectCategory.className = "text-blue-800 mb-2";
+        projectCategory.className = "text-blue-800 mb-2 text-black";
         projectCategory.innerHTML = highlight(project.category);
 
         const fullText = project.description;
         const shortText = fullText.length > 30 ? fullText.slice(0, 30) + "..." : fullText;
         const projectDescription = document.createElement("p");
-        projectDescription.className = "mb-2";
+        projectDescription.className = "mb-2 text-black";
         projectDescription.innerHTML = highlight(shortText);
 
         const toggleBtn = document.createElement("button");

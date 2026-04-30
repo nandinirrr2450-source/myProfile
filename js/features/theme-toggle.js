@@ -20,3 +20,5 @@ function initThemeToggle(){
     
 
 }
+
+document.addEventListener("DOMContentLoaded", initThemeToggle);

@@ -1,34 +1,133 @@
-.dark-mode{
-    background-color: black;
-    color: white;
-}
- 
-.dark-mode nav{
-    background-color: rgb(85, 80, 80);
-    color: white;
-}
- 
-.dark-mode section{
-    background-color: black;
-    color: black;
+body {
+font-family: 'Inter', sans-serif;
 }
 
-.dark-mode .bg-blue-100{
-    background-color: black;
-    color: white;
+section {
+border-bottom: 1px solid #eee;
 }
- .dark-mode .bg-white{
-    background-color: rgb(5, 10, 79)
+/* GLOBAL DARK MODE */
+.dark-mode {
+    background-color: #0f172a;
+    color: #f1f5f9;
 }
- .dark-mode .text-gray-700{
-    color: white;
+
+/* NAVBAR FIX */
+.dark-mode nav {
+    background-color: rgba(15, 23, 42, 0.95) !important;
+    border-color: #334155;
 }
-.dark-mode h1{
-    color: white;
+
+.dark-mode nav a,
+.dark-mode nav li {
+    color: #e2e8f0 !important;
 }
-mark {
-    background-color: yellow;
-    color: black;
-    padding: 2px;
+
+/* TEXT FIX */
+.dark-mode .text-gray-500 {
+    color: #cbd5f5 !important;
 }
- 
+
+.dark-mode .text-gray-600 {
+    color: #e2e8f0 !important;
+}
+
+.dark-mode .text-gray-900 {
+    color: #f8fafc !important;
+}
+
+/* CARD / SECTIONS FIX */
+.dark-mode .bg-white {
+    background-color: #1e293b !important;
+    color: #f1f5f9 !important;
+}
+
+.dark-mode .bg-gray-100 {
+    background-color: #020617 !important;
+}
+
+/* BORDER FIX */
+.dark-mode .border {
+    border-color: #334155 !important;
+}
+
+/* INPUTS */
+.dark-mode input {
+    background-color: #0f172a;
+    color: #fff;
+    border-color: #334155;
+}
+
+/* BUTTONS */
+.dark-mode .bg-black {
+    background-color: #f1f5f9 !important;
+    color: #0f172a !important;
+}
+.dark-mode #projects-container {
+    color: #f1f5f9;
+}
+
+.dark-mode #projects-container * {
+    color: #f1f5f9 !important;
+}
+.footer-link {
+    border-color: #334155;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #22d3ee;
+    border-color: #22d3ee;
+    box-shadow: 0 0 10px rgba(34, 211, 238, 0.4);
+}
+#intro-text {
+    text-shadow: 0 0 20px rgba(34, 211, 238, 0.4);
+}
+
+/* NAVBAR HOVER UNDERLINE */
+nav a {
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: black;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+/* SECTION TITLE HOVER UNDERLINE */
+section h2 {
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 3px;
+    background: black;
+    transition: width 0.3s ease;
+}
+
+section h2:hover::after {
+    width: 60%;
+}
+
+
+/* DARK MODE SUPPORT */
+.dark-mode nav a::after,
+.dark-mode section h2::after {
+    background: #22d3ee;
+}

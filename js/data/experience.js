@@ -1,14 +1,14 @@
 const experienceData = [
     {
-        short: "VTU",
+        short: "BE",
         title: "B.E in Electronics and Communication [2025]",
-        institute: "S.S.I.T",
+        institute: "Sri Siddhartha Institute of Technology",
         score: "CGPA: 8.34"
     },
     {
         short: "PUC",
         title: "2nd PUC [2021]",
-        institute: "SPUC",
+        institute: "Seshadripuram pre-university college",
         score: "Per: 87%"
     },
     {
